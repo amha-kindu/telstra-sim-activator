@@ -23,10 +23,10 @@ public class SimCardActRestController {
     @PostMapping("/actuate")
     public void processActuation(@RequestBody SimCard simCard) {
         var result = requestHandler.actuate(simCard);
-        System.out.println(result.getSuccess());
+//        System.out.println(result.getSuccess());
         simCard.setActive(result.getSuccess());
         simcardRepo.save(simCard);
-        System.out.println(simCard.getId());
+//        System.out.println(simCard.getId());
     }
 
     @GetMapping("/simcard")
