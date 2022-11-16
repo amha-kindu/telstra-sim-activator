@@ -1,7 +1,6 @@
 au\com\telstra\simcardactivator\component\ActuationRequestHandler.class
 au\com\telstra\simcardactivator\entity\ActuationResult.class
+au\com\telstra\simcardactivator\repositories\SimCardRepository.class
 au\com\telstra\simcardactivator\SimCardActivator.class
 au\com\telstra\simcardactivator\component\SimCardActRestController.class
-au\com\telstra\simcardactivator\dto\SimCardDTO.class
-au\com\telstra\simcardactivator\repositories\SimCardRepository.class
 au\com\telstra\simcardactivator\entity\SimCard.class

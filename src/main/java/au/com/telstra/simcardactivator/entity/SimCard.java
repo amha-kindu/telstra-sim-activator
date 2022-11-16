@@ -1,7 +1,6 @@
 package au.com.telstra.simcardactivator.entity;
 
 
-import au.com.telstra.simcardactivator.dto.SimCardDTO;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
 import javax.persistence.*;
@@ -22,16 +21,10 @@ public class SimCard {
     public void setId(Long id) {    this.id = id;   }
 
     public SimCard() {}
-    public SimCard(SimCardDTO dto){
-        this(dto.iccid, dto.customerEmail, dto.active);
-    }
     public SimCard(String iccid, String customerEmail, boolean active) {
         this.iccid = iccid;
         this.customerEmail = customerEmail;
         this.active = active;
-    }
-    public SimCardDTO dto(){
-        return new SimCardDTO(this.iccid, this.customerEmail, this.active);
     }
     public String getIccid() {  return iccid;   }
 

@@ -2,5 +2,5 @@ projectKey=Telstra-Simcard-Activator
 serverUrl=http://localhost:9000
 serverVersion=9.7.1.62043
 dashboardUrl=http://localhost:9000/dashboard?id=Telstra-Simcard-Activator
-ceTaskId=AYSCCeQvVrguxxLEHHnZ
-ceTaskUrl=http://localhost:9000/api/ce/task?id=AYSCCeQvVrguxxLEHHnZ
+ceTaskId=AYSCL8W-VrguxxLEHHnc
+ceTaskUrl=http://localhost:9000/api/ce/task?id=AYSCL8W-VrguxxLEHHnc
