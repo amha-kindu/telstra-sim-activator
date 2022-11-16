@@ -2,7 +2,6 @@ package stepDefinitions;
 
 import  au.com.telstra.simcardactivator.SimCardActivator;
 import au.com.telstra.simcardactivator.dto.SimCardDTO;
-import au.com.telstra.simcardactivator.entity.SimCard;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
@@ -39,11 +38,11 @@ public class SimCardActivatorStepDefinitions {
     @Then("sim-card is activated and stored in database")
     public void simCardIsActivatedAndStoredInDatabase() throws Exception{
         SimCardDTO simCard = restTemplate.getForObject("http://localhost:8080/simcard?id={id}", SimCardDTO.class, 1);
-        if(!simCard.getActive())    throw new Exception();
+        if(!simCard.active)    throw new Exception();
     }
     @Then("sim-card is not activated")
     public void simCardIsNotActivated() throws Exception{
         SimCardDTO simCard = restTemplate.getForObject("http://localhost:8080/simcard?id={id}", SimCardDTO.class, 2);
-        if(simCard.getActive())    throw new Exception();
+        if(simCard.active)    throw new Exception();
     }
 }

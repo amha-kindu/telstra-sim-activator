@@ -31,6 +31,6 @@ public class SimCardActRestController {
         SimCard simCard = new SimCard();
         if(sim.isPresent())
             simCard = sim.get();
-        return simCard.dto();
+        return new SimCardDTO(simCard.getIccid(), simCard.getCustomerEmail(), simCard.getActive());
     }
 }

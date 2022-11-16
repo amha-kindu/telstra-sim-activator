@@ -23,7 +23,7 @@ public class SimCard {
 
     public SimCard() {}
     public SimCard(SimCardDTO dto){
-        this(dto.getIccid(), dto.getCustomerEmail(), dto.getActive());
+        this(dto.iccid, dto.customerEmail, dto.active);
     }
     public SimCard(String iccid, String customerEmail, boolean active) {
         this.iccid = iccid;
